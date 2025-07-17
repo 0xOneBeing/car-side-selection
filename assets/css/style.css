@@ -1,0 +1,13 @@
+.car-side-button {
+  cursor: pointer;
+  background-color: #1011127c;
+  width: 100%;
+  height: 50px;
+}
+
+.car-side-button:hover {
+  background-color: #4fc2f77d;
+}
+.car-side-button:active {
+  background-color: #42a4f5aa;
+}

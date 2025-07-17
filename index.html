@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Side Selection</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+  >
+    <h1 class="text-center">Select Your Car Side</h1>
+
+    <div class="wrapper w-[250px]">
+      <div class="selector-container max-h-96 w-auto relative">
+        <img
+          alt="Car"
+          src="./assets/images/istockphoto-car.jpg"
+          class="absolute inset-0 w-full h-full object-contain"
+        />
+        <div
+          class="grid grid-cols-2 gap-0 h-full w-full car-side-options relative"
+        >
+          <button id="rear-left-side" class="car-side-button relative"></button>
+          <button
+            id="front-right-side"
+            class="car-side-button relative"
+          ></button>
+          <button id="rear-left-side" class="car-side-button"></button>
+          <button id="front-right-side" class="car-side-button"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="selected-side">
+      <p id="selected-side-text">No side selected</p>
+    </div>
+  </body>
+</html>
